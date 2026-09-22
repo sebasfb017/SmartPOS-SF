@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 8060 -H 0.0.0.0",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 8060 -H 0.0.0.0",
     "lint": "eslint"
   },
   "dependencies": {
+    "@prisma/client": "^7.10.0",
+    "@types/nodemailer": "^8.0.2",
     "next": "16.3.5",
+    "nodemailer": "^10.0.10",
     "react": "19.2.8",
     "react-dom": "19.2.8"
   },
@@ -20,6 +23,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.5",
+    "prisma": "^7.10.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
